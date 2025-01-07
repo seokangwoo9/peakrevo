@@ -10,23 +10,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>PeakRevo</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav-box margin">
         <div class="logo-box">
           <img src="logo.png" alt="logo of peakrevo" class="logo" />
           <p>PeakRevo</p>
         </div>
         <ul class="nav-link">
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Service</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#service">Service</a></li>
           <li class="nav-item"><a href="#">Career</a></li>
           <li class="nav-item">
             <a href="#" class="btn">Contact us &rarr;</a>
           </li>
         </ul>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </nav>
 
       <div class="hero-box margin">
@@ -40,17 +45,18 @@
             <a href="#" class="hero-cta">We have what you need</a>
           </div>
           <div class="hero--r">
-            <p>Business</p>
-            <p>management</p>
-            <p>Technology <span>.</span></p>
+            <p>
+              Business <br />management<br />
+              Technology <span>.</span>
+            </p>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section-intro">
-        <div class="grid grid--2-col">
+      <section class="section-intro" id="about">
+        <div class="intro grid grid--2-col">
           <div class="intro-text">
             <!-- <img src="img/logo.png" alt="logo" /> -->
             <div class="intro-description">
@@ -69,8 +75,8 @@
         </div>
       </section>
 
-      <section class="section-service margin">
-        <div class="grid grid--2-col">
+      <section class="section-service" id="service">
+        <div class="service grid grid--2-col margin">
           <div class="service-text-box">
             <p class="section-tag">UPCOMING PRODUCT</p>
             <div class="service-main-text">
@@ -164,5 +170,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,145 @@
+/******************************************************/
+/* MEDIA QUERY*/
+/******************************************************/
+
+/******************************************************/
+/* Below 1200px (Smaller desktop)*/
+/******************************************************/
+@media (max-width: 75em) {
+  .hero--r p {
+    font-size: 5.2rem;
+  }
+}
+
+/******************************************************/
+/* Below 988px (Smaller desktop)*/
+/******************************************************/
+/* @media (max-width: 62em) {
+} */
+
+/******************************************************/
+/* Below 896px (Smaller desktop)*/
+/******************************************************/
+@media (max-width: 57em) {
+  .hero {
+    grid-template-columns: 1fr;
+    margin: 4.8rem auto 4.8rem auto;
+  }
+  .hero--r p {
+    width: 100%;
+  }
+  .hero--l-text {
+    width: 100%;
+  }
+  .hero-cta:link,
+  .hero-cta:visited {
+    width: 100%;
+  }
+
+  .hero--r {
+    grid-row: 1;
+  }
+
+  .hero--l-text {
+    font-size: 2rem;
+  }
+
+  .hero-cta:link,
+  .hero-cta:visited {
+    font-size: 2rem;
+  }
+
+  .footer-box {
+    gap: 3.2rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+
+  .address {
+    font-size: 1.2rem;
+  }
+
+  .service {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .service-description-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+    /* flex-grow: 1; */
+  }
+
+  .service-description-item:first-child {
+    margin-top: 4.3rem;
+  }
+
+  .service-design {
+    display: none;
+  }
+
+  /* mobile nav */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav-link {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.8rem;
+    font-size: 3rem;
+    transition: all 0.5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav-link {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-description {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+  }
+
+  .footer-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 29em) {
+  .hero--r p {
+    font-size: 4.3rem;
+  }
+}

@@ -20,6 +20,7 @@ FONT SIZE SYSTEM(PX)
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -111,6 +112,24 @@ body {
   color: #fff;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /******************************************************/
 /* NAVIGATION*/
 /******************************************************/
@@ -120,9 +139,10 @@ body {
 /******************************************************/
 
 .hero {
-  height: 50vh;
+  height: 70vh;
   align-items: center;
-  justify-items: flex-start;
+  justify-items: center;
+  gap: 4.8rem;
 }
 
 .hero--l {
@@ -336,7 +356,7 @@ body {
   color: rgba(51, 51, 51, 0.041);
   transform: rotate(40deg);
   position: absolute;
-  bottom: -21.3rem;
+  bottom: -11.3rem;
   left: -23.9rem;
 }
 
